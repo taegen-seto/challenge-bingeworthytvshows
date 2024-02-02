@@ -154,17 +154,26 @@
         width: 100%;
         aspect-ratio: 16/9;
       }
+      .scene-video {
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 4/3;
+      }
       .intro {
-        font-family: "PT Sans Narrow", sans-serif;
-        font-size: 22px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
         margin: 50px 0 0 0;
         padding: 10px 20px;
       }
       .storyline {
-        font-family: "PT Sans Narrow", sans-serif;
-        font-size: 22px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
         margin: 50px 0 30px 0;
         padding: 10px 20px;
+      }
+      .trailer {
+        margin: 100px 0 300px 0;
       }
       .grid {
         display: grid;
@@ -177,28 +186,28 @@
         grid-template-columns: 2fr 1fr;
       }
       .rosa {
-        margin: 200px 0;
+        margin: 300px 0;
       }
       .backstreet {
         margin: 300px 0;
       }
       .character {
-        font-family: "PT Sans Narrow", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 18px;
         margin: 0;
         padding: 30px 10px;
       }
       .scene {
-        font-family: "PT Sans Narrow", sans-serif;
-        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 17px;
         margin: 0;
-        padding: 20px;
+        padding: 30px 0 0 0;
       }
       .netflix {
         background-color: rgba(255, 255, 3, 0.5);
         padding: 20px 0;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 5px;
         font-size: 27px;
       }
       .netflix a {
@@ -215,6 +224,7 @@
       }
     </style>
   </head>
+  <a name="top"></a>
   <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
     <div class="container-fluid">
       <i class="fa-solid fa-handcuffs nav-icon"></i>
@@ -270,8 +280,10 @@
     <main class="container">
       <section class="intro">
         Brooklyn Nine-Nine is an American police procedural comedy television
-        series that aired on Fox, and later on NBC, from September 17, 2013 to
-        September 16, 2021, for eight seasons and 153 episodes.
+        series that aired on Fox, and later on NBC,
+        <br />
+        from September 17, 2013 to September 16, 2021, for eight seasons and 153
+        episodes.
         <br />
         <br />
         Created by
@@ -298,13 +310,22 @@
         >).
         <br />
         <br />
-        Featuring an ensemble cast headed by Braugher and
+        Featuring an ensemble cast headed by
+        <a
+          href="https://en.wikipedia.org/wiki/Andre_Braugher"
+          title="wikipedia page"
+          target="_blank"
+          >Braugher</a
+        >
+        and
         <a
           href="https://en.wikipedia.org/wiki/Andy_Samberg"
           title="wikipedia page"
           target="_blank"
           >Andy Samberg</a
-        >, it also stars
+        >,
+        <br />
+        it also stars
         <a
           href="https://en.wikipedia.org/wiki/Stephanie_Beatriz"
           title="wikipedia page"
@@ -372,21 +393,21 @@
         >
       </button>
       <a name="trailer"></a>
-
-      <h5>TRAILER</h5>
-      <div class="video-container">
-        <iframe
-          class="video"
-          src="https://www.youtube.com/embed/sEOuJ4z5aTc?si=h_u8qbcxh40hNjS3&amp;controls=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-
+      <section class="trailer">
+        <h5>TRAILER</h5>
+        <div class="video-container">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/sEOuJ4z5aTc?si=h_u8qbcxh40hNjS3&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <a name="character"></a>
       <section class="rosa">
-        <a name="character"></a>
         <div class="grid grid-2-columns-with-second-narrow">
           <div>
             <h2>Rosa Diaz</h2>
@@ -401,9 +422,10 @@
               difficult to read.
               <br />
               <br />
-              Most of the members of the precinct are frightened by her. Despite
-              this behavior, she does show care to those she deems her friends
-              and will protect them at all costs.
+              Most of the members of the precinct are frightened by her.
+              <br />
+              Despite this behavior, she does show care to those she deems her
+              friends and will protect them at all costs.
               <br />
               Rosa takes pride in the fact that no one knows much about her.
               <br />
@@ -418,16 +440,16 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/360/original/Rosa.jpeg?1706837844"
             alt="Rosa"
-            width="90%"
+            width="100%"
           />
         </div>
       </section>
+      <a name="scene"></a>
       <section class="backstreet">
-        <a name="scene"></a>
         <div class="grid grid-2-columns-with-first-narrow">
           <div class="video-container">
             <iframe
-              class="video"
+              class="scene-video"
               src="https://www.youtube.com/embed/HlBYdiXdUa8?si=sfh3QCYcOhNNS3Wi&amp;controls=0"
               title="YouTube video player"
               frameborder="0"
@@ -439,25 +461,36 @@
             <h3>"I want it that way"</h3>
             <h4>( aka one of my favourite scenes )</h4>
             <p class="scene">
+              The cold open for the season 5 episode “DFW” is probably the most
+              iconic scene in the series.
+              <br />
+              <br />
               Typically, jokes in sitcoms require a basic understanding of the
-              characters and storylines. The cold open with "I Want It That
-              Way," however, is a scene that viewers can watch multiple times
-              without seeing any previous episodes and knowing any information
-              about the series. An award-winning signature song from a
-              mainstream boy band such as the Backstreet Boys and a beloved
-              comedian like Andy Samberg are enough to make viewers laugh over
-              and over, regardless if they've ever seen a full episode of the
-              series. Since the joke is executed perfectly, familiarity with the
-              Backstreet Boys and Andy Samberg is not required to enjoy the
-              scene.
+              characters and storylines however this is a scene that viewers can
+              watch multiple times without seeing any previous episodes and
+              knowing any information about the series.
+              <br />
+              <br />
+
+              An award-winning signature song from a mainstream boy band such as
+              the Backstreet Boys and a beloved comedian like Andy Samberg are
+              enough to make viewers laugh over and over, regardless if they've
+              ever seen a full episode of the series. Since the joke is executed
+              perfectly, familiarity with the Backstreet Boys and Andy Samberg
+              is not required to enjoy the scene.
             </p>
           </div>
         </div>
       </section>
-      <h6>nine nine!</h6>
-    </main>
-    <section class="netflix">
       <a name="netflix"></a>
+    </main>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/375/original/squad.jpeg?1706857326"
+      alt="squad"
+    />
+    <h6>nine nine!</h6>
+    <section class="netflix">
       <a
         href="https://www.netflix.com/au/title/70281562"
         title="Netflix"
@@ -484,5 +517,8 @@
         hosted on Netlify</a
       >
     </footer>
+    <section>
+      <a href="#top" class="back-to-top d-block d-sm-none">· back to top ·</a>
+    </section>
   </body>
 </html>
