@@ -14,10 +14,41 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/ed166636d3.js"
+      crossorigin="anonymous"
+    ></script>
     <title>📺 Binge-Worthy TV</title>
     <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+      }
       h1 {
         color: magenta;
+      }
+
+      footer {
+        color: rgba(255, 255, 255, 0.5);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/355/original/B99-footer.jpeg?1706834064");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 200px;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+      .cover-img {
+        width: 100%;
       }
     </style>
   </head>
@@ -55,9 +86,31 @@
   </nav>
   <body>
     <header>
-      <h1>Welcome</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/345/original/Brooklyn-Nine-Nine.jpg?1706831785"
+        alt="B99 cover img"
+        class="cover-img"
+      />
     </header>
     <main>content goes here</main>
-    <footer>coded by Taegen Seto</footer>
+    <footer>
+      <a href="https://www.taegenseto.com/" title="taegenseto.com">
+        <i class="fa-solid fa-robot"></i>
+        coded by Taegen Seto for SheCodes "Binge-Worthy TV Shows Challenge"</a
+      >
+      <i class="fa-solid fa-robot"></i>
+      <br />
+      <br />
+      <i class="fa-brands fa-github"></i>
+      <a
+        href="https://github.com/taegen-seto/challenge-bingeworthytvshows"
+        title="GitHub repository"
+        >open-sourced on GitHub</a
+      >
+      <i class="fa-solid fa-globe"></i>
+      <a href="https://lambent-granita.netlify.app/" title="Netlify">
+        hosted on Netlify</a
+      >
+    </footer>
   </body>
 </html>
