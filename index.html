@@ -52,7 +52,7 @@
         font-weight: 900;
         font-size: 100px;
         color: #ffff03;
-        margin: 0;
+        margin: 50px 0 80px 0;
       }
       h3 {
         font-family: "Open Sans", sans-serif;
@@ -63,8 +63,8 @@
       }
       h4 {
         font-family: "Open Sans", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 70px;
+        font-weight: 900;
         color: #ffff03;
         letter-spacing: 2px;
         margin: 0;
@@ -72,7 +72,7 @@
       h5 {
         font-family: "Open Sans", sans-serif;
         font-weight: 900;
-        font-size: 100px;
+        font-size: 200px;
         color: #ffff03;
         margin: 200px 0 50px 0;
       }
@@ -83,23 +83,9 @@
         color: #ffff03;
         margin: 200px 0;
       }
-      button {
-        display: block;
-        margin: 0px auto;
-        background-color: black;
-        font-family: "PT Sans Narrow", sans-serif;
-        font-size: 22px;
-        padding: 15px 100px;
-        border: 2px solid #ffff03;
-        border-radius: 22px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-      }
-      button a {
-        color: #ffff03;
-      }
       img {
         border-radius: 4px;
+        border: none;
       }
       footer {
         color: rgba(255, 255, 255, 0.5);
@@ -148,6 +134,7 @@
       }
       .cover-img {
         width: 100%;
+        border-radius: 0;
       }
       .video {
         border-radius: 4px;
@@ -165,6 +152,16 @@
         margin: 50px 0 0 0;
         padding: 10px 20px;
       }
+      .more {
+        background-color: rgba(255, 255, 3, 0.5);
+        padding: 20px 0;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 27px;
+      }
+      .more a {
+        color: black;
+      }
       .storyline {
         font-family: "Open Sans", sans-serif;
         font-size: 18px;
@@ -174,7 +171,7 @@
       .trailer {
         margin: 100px 0 300px 0;
       }
-      .grid {
+      /* .grid {
         display: grid;
         grid-gap: 64px;
       }
@@ -183,7 +180,16 @@
       }
       .grid-2-columns-with-second-narrow {
         grid-template-columns: 2fr 1fr;
+      } */
+      .aka {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffff03;
+        letter-spacing: 2px;
+        margin: 0;
       }
+
       .rosa {
         margin: 300px 0;
       }
@@ -218,8 +224,126 @@
         margin-left: 20px;
       }
       .icon {
-        color: #ffff03;
+        color: rgba(255, 255, 3, 0.5);
         font-size: 27px;
+      }
+      .back-to-top {
+        font-size: 18px;
+        letter-spacing: 3px;
+      }
+      @media (max-width: 960px) {
+        body {
+          margin: 10px auto;
+        }
+
+        h1 {
+          font-size: 22px;
+          margin: 20px 0;
+        }
+        h2 {
+          font-size: 55px;
+          margin: 20px;
+        }
+        h3 {
+          font-size: 55px;
+        }
+        h4 {
+          font-size: 27px;
+        }
+        h5 {
+          font-size: 60px;
+          font-weight: bold;
+          margin: 30px 0;
+        }
+        button {
+          padding: 5px 20px;
+        }
+        button a {
+          font-size: 12px;
+        }
+        img {
+          width: 100%;
+        }
+        footer {
+          width: 100%;
+        }
+        footer {
+          padding: 10px;
+          text-align: center;
+          letter-spacing: 0px;
+          background-position: top;
+        }
+        footer a {
+          font-size: 7px;
+        }
+        .navbar-brand {
+          font-size: 18px;
+          margin: 15px 0;
+        }
+        .nav-link {
+          font-size: 12px;
+          font-weight: lighter;
+          letter-spacing: 3px;
+          margin: 5px;
+          text-align: end;
+        }
+        .nav-icon {
+          margin: 10px;
+        }
+        .navbar-icon {
+          margin: 0;
+          font-size: 30px;
+
+          color: #ffff03;
+        }
+        .navbar-toggler {
+          border-color: #ffff03;
+          padding: 5px;
+          margin-right: 10px;
+        }
+        .icon {
+          font-size: 10px;
+        }
+        .intro {
+          font-size: 14px;
+          margin: 20px 0 0 0;
+          padding: 20px;
+        }
+        .more {
+          font-size: 10px;
+          padding: 10px;
+          margin: 0;
+        }
+        .storyline {
+          font-size: 12px;
+        }
+        .trailer {
+          margin: 40px 0;
+        }
+        .aka {
+          font-size: 11px;
+        }
+        .rosa {
+          margin: 30px 0 100px 0;
+        }
+        .character {
+          font-size: 10px;
+        }
+        .backstreet {
+          margin: 30px 0;
+        }
+        .scene {
+          font-size: 10px;
+          margin-bottom: 20px;
+        }
+        .netflix {
+          font-size: 10px;
+          padding: 10px;
+        }
+        .back-to-top {
+          font-size: 12px;
+          letter-spacing: 3px;
+        }
       }
     </style>
   </head>
@@ -237,7 +361,9 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars navbar-icon"></i
+        ></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -368,7 +494,7 @@
           >Joel McKinnon Miller</a
         >.
         <div class="storyline">
-          <h1>storyline</h1>
+          <h2>storyline</h2>
           <p>
             Captain Ray Holt takes over Brooklyn's 99th precinct, which includes
             Detective Jake Peralta, a talented but carefree detective who's used
@@ -383,17 +509,18 @@
         </div>
       </section>
 
-      <button>
+      <section class="more">
         <a
           href="https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine"
           title="B99 wiki page"
           target="_blank"
           >Learn more</a
         >
-      </button>
+      </section>
+
       <a name="trailer"></a>
       <section class="trailer">
-        <h5>TRAILER</h5>
+        <h2>trailer</h2>
         <div class="video-container">
           <iframe
             class="video"
@@ -407,10 +534,10 @@
       </section>
       <a name="character"></a>
       <section class="rosa">
-        <div class="grid grid-2-columns-with-second-narrow">
-          <div>
-            <h2>Rosa Diaz</h2>
-            <h4>( aka my favourite character )</h4>
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Rosa Diaz</h3>
+            <div class="aka">( aka my favourite character )</div>
             <p class="character">
               Rosalita "Rosa" Diaz is a main character of the show.
               <br />
@@ -436,19 +563,21 @@
               In 99, she is known to be bisexual. She has a dog named Arlo.
             </p>
           </div>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/360/original/Rosa.jpeg?1706837844"
-            alt="Rosa"
-            width="100%"
-          />
+          <div class="col-sm-4">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/360/original/Rosa.jpeg?1706837844"
+              alt="Rosa"
+              width="100%"
+            />
+          </div>
         </div>
       </section>
       <a name="scene"></a>
       <section class="backstreet">
-        <div class="grid grid-2-columns-with-first-narrow">
-          <div class="video-container">
+        <div class="row">
+          <div class="col-sm-4">
             <iframe
-              class="scene-video"
+              class="scene-video d-none d-sm-block"
               src="https://www.youtube.com/embed/HlBYdiXdUa8?si=sfh3QCYcOhNNS3Wi&amp;controls=0"
               title="YouTube video player"
               frameborder="0"
@@ -456,9 +585,9 @@
               allowfullscreen
             ></iframe>
           </div>
-          <div>
-            <h3>"I want it that way"</h3>
-            <h4>( aka one of my favourite scenes )</h4>
+          <div class="col-sm-8">
+            <h4>"I want it that way"</h4>
+            <div class="aka">( aka one of my favourite scenes )</div>
             <p class="scene">
               The cold open for the season 5 episode “DFW” is probably the most
               iconic scene in the series.
@@ -479,6 +608,16 @@
               is not required to enjoy the scene.
             </p>
           </div>
+          <div class="col-sm-4">
+            <iframe
+              class="scene-video d-block d-sm-none"
+              src="https://www.youtube.com/embed/HlBYdiXdUa8?si=sfh3QCYcOhNNS3Wi&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </section>
       <a name="netflix"></a>
@@ -488,7 +627,7 @@
       src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/375/original/squad.jpeg?1706857326"
       alt="squad"
     />
-    <h6>nine nine!</h6>
+    <h5>nine nine!</h5>
     <section class="netflix">
       <a
         href="https://www.netflix.com/au/title/70281562"
@@ -517,7 +656,7 @@
       >
     </footer>
     <section>
-      <a href="#top" class="back-to-top d-block d-sm-none">· back to top ·</a>
+      <a href="#top" class="back-to-top">· back to top ·</a>
     </section>
   </body>
 </html>
