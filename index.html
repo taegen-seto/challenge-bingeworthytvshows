@@ -29,10 +29,15 @@
         text-decoration: none;
         color: rgba(255, 255, 255, 0.5);
       }
+
       h1 {
         color: magenta;
       }
-
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: black;
+      }
       footer {
         color: rgba(255, 255, 255, 0.5);
         background-image: linear-gradient(
@@ -47,8 +52,19 @@
         text-align: center;
         letter-spacing: 2px;
       }
+      .container {
+        max-width: 1200px;
+        background-color: grey;
+      }
       .cover-img {
         width: 100%;
+      }
+      .grid {
+        display: grid;
+        grid-gap: 64px;
+      }
+      .grid-2-columns-with-first-narrow {
+        grid-template-columns: 1fr 2fr;
       }
     </style>
   </head>
@@ -92,7 +108,139 @@
         class="cover-img"
       />
     </header>
-    <main>content goes here</main>
+    <main class="container">
+      <section class="intro">
+        Brooklyn Nine-Nine is an American police procedural comedy television
+        series that aired on Fox, and later on NBC, from September 17, 2013 to
+        September 16, 2021, for eight seasons and 153 episodes.
+        <br />
+        Created by
+        <a
+          href="
+        https://en.wikipedia.org/wiki/Dan_Goor"
+          title="wikipedia page"
+          target="_blank"
+          >Dan Goor</a
+        >
+        and
+        <a
+          href="https://en.wikipedia.org/wiki/Michael_Schur"
+          title="wikipedia page"
+          target="_blank"
+          >Michael Schur</a
+        >, it revolves around seven New York City Police Department (NYPD)
+        detectives who are adjusting to life under their new commanding officer,
+        the serious and stern Captain Raymond Holt (<a
+          href="https://en.wikipedia.org/wiki/Andre_Braugher"
+          title="wikipedia page"
+          target="_blank"
+          >Andre Braugher</a
+        >).
+        <br />
+        Featuring an ensemble cast headed by Braugher and
+        <a
+          href="https://en.wikipedia.org/wiki/Andy_Samberg"
+          title="wikipedia page"
+          target="_blank"
+          >Andy Samberg</a
+        >, it also stars
+        <a
+          href="https://en.wikipedia.org/wiki/Stephanie_Beatriz"
+          title="wikipedia page"
+          target="_blank"
+          >Stephanie Beatriz</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Terry_Crews"
+          title="wikipedia page"
+          target="_blank"
+          >Terry Crews</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Melissa_Fumero"
+          title="wikipedia page"
+          target="_blank"
+          >Melissa Fumero</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Joe_Lo_Truglio"
+          title="wikipedia page"
+          target="_blank"
+          >Joe Lo Truglio</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Chelsea_Peretti"
+          title="wikipedia page"
+          target="_blank"
+          >Chelsea Peretti</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Dirk_Blocker"
+          title="wikipedia page"
+          target="_blank"
+          >Dirk Blocker</a
+        >, and
+        <a
+          href="https://en.wikipedia.org/wiki/Joel_McKinnon_Miller"
+          title="wikipedia page"
+          target="_blank"
+          >Joel McKinnon Miller</a
+        >.
+      </section>
+      <button>
+        <a href="https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine"
+          >Learn more</a
+        >
+      </button>
+
+      TRAILER
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/sEOuJ4z5aTc?si=h_u8qbcxh40hNjS3&amp;controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <section>
+        <div class="grid grid-2-columns-with-first-narrow">
+          my favourite character
+
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/113/360/original/Rosa.jpeg?1706837844"
+            alt="Rosa"
+            width="30%"
+          />
+
+          Rosa Diaz
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-2-columns-with-first-narrow">
+          <p class="text-centre">
+            one of my favourite scenes
+            <br />
+
+            "I want it that way"
+          </p>
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/HlBYdiXdUa8?si=sfh3QCYcOhNNS3Wi&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <a href="https://www.taegenseto.com/" title="taegenseto.com">
         <i class="fa-solid fa-robot"></i>
